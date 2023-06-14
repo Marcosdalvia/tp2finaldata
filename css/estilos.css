@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #9f9f9f;
+}
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 18.83vh;
+    background-color: #c96f26;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 19vh;
+    background-color: black;
+    width: 100vw;
+    padding: 2vw;
+    min-height: 30vh;
+
+}
+nav div {
+
+    display: flex;
+    width: 24.11%;
+     justify-content: space-between;
+}
+
+
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section { 
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   align-content: space-around;
+   height: 180vh;
+   margin-left: 20px;
+}
+
+section div {
+    width: 35%;
+}
+
+section div img, video {
+width: 100%;
+}
+
+header {
+    height: 45.30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Kanit';
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 125%;
+}
+
+nav h1 {
+    font-weight: 500;
+}
+
+header h1 {
+    font-family: 'Kanit', sans serif;
+   
+}
+header h3 {
+    text-transform: uppercase;
+    color: #8d410a;
+    letter-spacing: 5px;
+    font-family: 'Kanit-bold';
+}
+
+header p {
+    font-family: 'Kanit"';
+    font-size: 15px;
+    color: #ffffff;
+}
+header a,
+nav a {
+    font-family: 'Kanit';
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+}
+a:hover {
+    color: #6b6b6b
+}
+
+header a {
+    font-family: 'Kanit';
+
+    background-color: #2125291c;
+
+}
+
+nav span {
+    display: none;
+}
+.icon-menu::before {
+     color: white;
+    font-size: 4vw;
+}
+span.icon-menu:hover {
+    cursor: pointer;
+}
+section div img {
+    transition: transform 0.3s;
+}
+section div img :hover {
+    opacity: 0.6;
+    transform: scale(0.8);
+
+}
+footer{
+    color: #ffffff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c96f26;
+
+}
+nav a:hover {
+    opacity: 1;
+}
+@media(max-width: 1024px) {
+  
+    nav div {
+        width: 50%;
+    }
+    main section {
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    section {
+        height: auto;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+
+    }
+}
